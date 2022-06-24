@@ -1,0 +1,7 @@
+<ng-container *ngIf="{quantity: quantity | async} as dataCart">
+    <ng-container *ngIf="dataCart.quantity">
+        <button mat-raised-button matBadge="{{dataCart.quantity}}" matBadgeColor="accent" class="btn icon">
+            <mat-icon>shopping_cart</mat-icon>
+        </button>
+    </ng-container>
+</ng-container>

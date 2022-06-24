@@ -2,7 +2,5 @@
     <button class="btn icon menu-icon"><mat-icon>menu</mat-icon></button>
     <span>{{title}}</span>
     <span class="spacer"></span>
-    <button mat-raised-button matBadge="{{quantity | async | json}}" matBadgeColor="accent" class="btn icon">
-        <mat-icon>shopping_cart</mat-icon>
-    </button>
+    <app-cart></app-cart>
 </mat-toolbar>
