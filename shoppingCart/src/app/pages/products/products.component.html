@@ -1,5 +1,7 @@
 <section class="products-section">
-    <mat-card class="card" *ngFor="let product of products">
-        <app-product-detail [product] = "product"></app-product-detail>
-    </mat-card>
+    <app-product-detail 
+        (addToCartClick)="addToCart(product)" 
+        [product] = "product" 
+        *ngFor="let product of products">
+    </app-product-detail>
 </section>
