@@ -14,6 +14,7 @@ export class CheckoutComponent implements OnInit {
     shippingAddress: '',
     city: '',
   };
+  isDelivery:boolean = false;
   stores!: Store[];
   constructor(private readonly storesSvc: StoresService) {}
 
@@ -22,9 +23,11 @@ export class CheckoutComponent implements OnInit {
         .subscribe(stores => this.stores = stores);
   }
 
-  onPickupOrDelivery(isDelivery: boolean): void {}
+  onPickupOrDelivery(isDelivery: boolean): void {
+    this.isDelivery = isDelivery;
+  }
 
   onSubmit():void{
-    
+
   }
 }
