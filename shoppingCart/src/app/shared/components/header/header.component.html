@@ -1,6 +1,8 @@
 <mat-toolbar color="primary">
     <button class="btn icon menu-icon"><mat-icon>menu</mat-icon></button>
-    <span>{{title}}</span>
+    <a [routerLink]="['/']"><span>{{title}}</span></a>
     <span class="spacer"></span>
-    <app-cart></app-cart>
+    <app-cart 
+        class="mouserHover"
+        (click)="goToCheckOut()"></app-cart>
 </mat-toolbar>

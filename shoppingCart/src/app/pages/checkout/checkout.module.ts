@@ -5,11 +5,13 @@ import { CheckoutRoutingModule } from './checkout-routing.module';
 import { CheckoutComponent } from './checkout.component';
 import { MaterialModule } from '../../material.module';
 import { FormsModule } from '@angular/forms';
+import { CheckoutDetailsComponent } from './checkout-details/checkout-details.component';
 
 
 @NgModule({
   declarations: [
-    CheckoutComponent
+    CheckoutComponent,
+    CheckoutDetailsComponent
   ],
   imports: [
     CommonModule,

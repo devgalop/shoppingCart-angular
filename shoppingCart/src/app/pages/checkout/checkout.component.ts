@@ -23,4 +23,8 @@ export class CheckoutComponent implements OnInit {
   }
 
   onPickupOrDelivery(isDelivery: boolean): void {}
+
+  onSubmit():void{
+    
+  }
 }
