@@ -1,0 +1,21 @@
+.container-form{
+    display:flex;
+    align-items:center;
+    padding:1rem 5rem;
+}
+.form-element{
+    flex: 1 1 auto;
+    width:100%;
+}
+.form{
+    width:100%;
+}
+button{
+    width:100%;
+}
+.form-element{
+    padding: 15px 0px 25px 2px;
+}
+.radio-button{
+    padding: 25px;
+}
